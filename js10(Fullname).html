@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Concatenation of names</title>
+	<style type="text/css">
+		table{
+			border:5px solid red;
+			padding:20px;
+			background-color: #dcdcdc;
+		}
+		input{
+			border:2px solid tomato;
+			margin: 5px;
+		}
+		input[type="button"]
+		{
+			background-color: green;
+			border-radius: 2px;
+			color:white;
+			border:2px solid yellow;
+			padding:5px;
+		}
+	</style>
+	<script type="text/javascript">
+		function concat(){
+			a= document.frm.fname.value;
+			b= document.frm.lname.value;
+			document.frm.fullName.value = (a+" "+b);
+		}
+	</script>
+</head>
+<body>
+	<form name="frm">
+		<table align="center">
+		<tr><td>First Name : </td><td><input type="text" name="fname"></td></tr>
+		<tr><td>Last Name : </td><td><input type="text" name="lname"></td>
+		<tr><td>Full Name : </td><td><input type="text" name="fullName"></td>
+		<tr><td colspan="2" align="center"><input type="button" value="Concatenate" onclick="concat();"></td></tr>
+		</table>
+	</form>
+</body>
+</html>

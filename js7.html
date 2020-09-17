@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment</title>
+	<style type="text/css">
+		.main{
+			width:700px;
+			height:640px;
+			position:absolute;
+			top:10px;
+			left:450px;
+			border:5px solid black;
+			text-align:center;
+			padding:10px;	
+			background-color: white;
+		}
+		input[type="button"]{
+			width:150px;
+			height:40px;
+			background-color: black;
+			color:white;
+			border-radius: 50px;
+			font-size: 20px;
+			border-width: 0px;
+		}
+		select{
+			width:150px;
+			height:50px;
+			border:3px solid black;
+			font-size: 20px;
+
+		}
+		
+		table{
+			padding: 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		function addText(){
+			a=document.getElementById("para");
+			a.innerHTML = document.myform.textarea1.value;
+		}
+		function setFontSize(){
+			a= document.getElementById("para");
+			if(document.myform.font.value=="10")
+			{
+				a.style.fontSize="10px";
+			}
+			if(document.myform.font.value=="12")
+			{
+				a.style.fontSize="12px";
+			}
+			if(document.myform.font.value=="14")
+			{
+				a.style.fontSize="14px";
+			}
+			if(document.myform.font.value=="16")
+			{
+				a.style.fontSize="16px";
+			}
+			if(document.myform.font.value=="18")
+			{
+				a.style.fontSize="18px";
+			}
+			if(document.myform.font.value=="20")
+			{
+				a.style.fontSize="20px";
+			}
+			if(document.myform.font.value=="22")
+			{
+				a.style.fontSize="22px";
+			}
+			if(document.myform.font.value=="24")
+			{
+				a.style.fontSize="24px";
+			}
+			if(document.myform.font.value=="26")
+			{
+				a.style.fontSize="26px";
+			}
+			if(document.myform.font.value=="28")
+			{
+				a.style.fontSize="28px";
+			}
+			if(document.myform.font.value=="30")
+			{
+				a.style.fontSize="30px";
+			}
+		}
+
+		function setColor(){
+			a= document.getElementById("para");
+			if(document.myform.color.value=="Default")
+			{
+				a.style.color="black";
+			}
+			if(document.myform.color.value=="Red")
+			{
+				a.style.color="red";
+			}
+			if(document.myform.color.value=="Green")
+			{
+				a.style.color="green";
+			}
+			if(document.myform.color.value=="Blue")
+			{
+				a.style.color="blue";
+			}
+			if(document.myform.color.value=="Yellow")
+			{
+				a.style.color="yellow";
+			}
+			if(document.myform.color.value=="Pink")
+			{
+				a.style.color="pink";
+			}
+		}
+	</script>
+</head>
+<body style="background-color: #170f0f;">
+	<div class="main">
+	<form name="myform">
+		<table cellpadding="20px">
+		<tr><td>
+		<textarea name="textarea1" rows="10" style="height: 350px; width:250px; border:5px solid black; font-size: 16px;"></textarea></td>
+		
+		<td>
+		<select name="font">
+			<option value="10">10</option>
+			<option value="12">12</option>
+			<option value="14">14</option>
+			<option value="16">16</option>
+			<option value="18">18</option>
+			<option value="20">20</option>
+			<option value="22">22</option>
+			<option value="24">24</option>
+			<option value="26">26</option>
+			<option value="28">28</option>
+			<option value="30">30</option>
+		</select>
+		<input type="button" value="set" onclick="setFontSize();">
+		</td></tr>
+		<br>
+		<tr>
+		<td><input type="button" value="Add text" onclick="addText();"></td>
+		<td><select name="color">
+			<option value="Default">Default</option>
+			<option value="Red">Red</option>
+			<option value="Green">Green</option>
+			<option value="Blue">Blue</option>
+			<option value="Yellow">Yellow</option>
+			<option value="Pink">Pink</option>
+		</select>
+		<input type="button" value="set" onclick="setColor();">
+		</td>
+		</tr>
+		</table>
+	</form>
+	<p id="para"></p>
+</div>
+</body>
+</html>

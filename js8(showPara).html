@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment</title>
+	<style type="text/css">
+		body{
+			background-color: #192027;
+		}
+		.container{
+			width:600px;
+			height:550px;
+			position: absolute;
+			top:50px;
+			left:450px;
+			text-align: center;
+			background-color: white;
+
+		}
+		.main{
+			width:500px;
+			height:400px;
+			position: relative;
+			top:50px;
+			left: 50px;
+			text-align: center;
+		}
+		#para{
+			font-size: 18px;
+			color: #b66925;
+			text-align: justify;
+			border-left: 10px solid #2572b6;
+			padding-left: 15px;
+		}
+		.btn{
+			width:150px;
+			height:40px;
+			border-radius: 40px;
+			font-size: 20px;
+			margin-top: 20px;
+			background-color: #2A4994;
+			color:white;
+			border-width: 0px;
+		}
+	</style>
+	<script type="text/javascript">
+		function show(){
+			a=document.getElementById("para");
+			a.style.display="block";
+		}
+		function hide(){
+			a=document.getElementById("para");
+			a.style.display="none";
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+	<input type="button" class="btn" value="Show" onclick="show();">
+	<input type="button" class="btn" value="Hide" onclick="hide();">
+	<div class="main">
+		<p id="para">
+			 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	</div>
+</body>
+</html>
